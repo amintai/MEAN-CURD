@@ -1,0 +1,64 @@
+
+
+<div class="container">
+    <div class="square">
+      <div class="center">
+  
+          <form (ngSubmit)="createEmployee()">
+          
+          <input type="hidden" name="_id" [(ngModel)]="employee._id">
+  
+          <div class="field">
+              <label class="label">FirstName</label>
+              <div class="control">
+                <input class="input" type="text" name="FirstName" placeholder="FirstName"[(ngModel)]="employee.FirstName" >
+              </div>
+          </div>
+          
+          <div class="field">
+              <label class="label">LastName</label>
+              <div class="control">
+                <input class="input" name="LastName" type="text" placeholder="LastName" [(ngModel)]="employee.LastName">
+              </div>
+          </div>
+          
+          <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <input class="input" name="Email" type="text" placeholder="email address" [(ngModel)]="employee.Email">
+              </div>
+          </div>
+          
+          <div class="field">
+              <label class="label">DOB</label>
+              <div class="control">
+                <input class="input" name="Dob" type="text" placeholder="Date Of Birth" [(ngModel)]="employee.Dob">
+              </div>
+          </div>
+          
+          <div class="field">
+              <label class="label">BIO</label>
+              <div class="control">
+                <textarea class="textarea" name="Bio" placeholder="Textarea"[(ngModel)]="employee.Bio"></textarea>
+              </div>
+            </div>
+     
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-link">Submit</button>
+              </div>
+              <div class="control">
+                <button class="button is-link is-light">Cancel</button>
+              </div>
+            </div>
+  
+          </form>
+      </div>
+   </div>
+  </div>
+      
+  
+  
+  
+  
+  

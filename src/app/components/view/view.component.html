@@ -1,0 +1,44 @@
+<div class="card">
+<div class="container">
+
+
+<table class="myTable 
+table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Dob</th>
+            <th>Bio</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+
+        <tr *ngFor="let emp of employies">
+            <td>{{emp.FirstName}}</td>
+            <td>{{emp.LastName}}</td>
+            <td>{{emp.Email}}</td>
+            <td>{{emp.Dob}}</td>
+            <td>{{emp.Bio}}</td>
+            <td> 
+            <a (click)="doUpdate(emp)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                  </svg>
+            </a>
+            </td>
+            <td> 
+             <a (click)="doDelete(emp)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive-fill" viewBox="0 0 16 16">
+                <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
+                </svg>
+            </a> 
+         </td>
+         
+        </tr>
+</table>
+
+</div>
+</div>
